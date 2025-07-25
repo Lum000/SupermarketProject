@@ -1,0 +1,16 @@
+{
+    "name": "Supermercado Central",
+    "short_name": "Mercado",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+      {
+        "src": "/icons/grocery-cart.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ]
+  }
+  
