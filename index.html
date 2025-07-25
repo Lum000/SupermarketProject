@@ -4,10 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <!--<script src="/js/app.js"></script>-->
-  <title>Supermercado Promoções</title>
+  <title>Home</title>
 
   <!-- Manifesto PWA -->
   <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="/css/style.css">
   <!-- Ícone (requerido para instalação como app) -->
   <link rel="icon" href="/icons/grocery-cart.png" />
@@ -15,24 +17,18 @@
   <meta name="theme-color" content="#ffffff" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Promoções</a></li>
-            </ul>
-            <div class="img-header">
-                <img src="/icons/shopping-cart.png" alt="">
-            </div>
-        </nav>
+    <header class="header-top">
+        <div class="icon-top">
+            <img src="icons/home-button.png" alt="">
+        </div>
+        <h1 class="whereiam" id="PageName"></h1>
     </header>
-    <section class="promotion">
-        <div class="promotion-imgs"><img src="" alt=""></div>
-    </section>
-    <section class="container">
-        <section class="content">
-
-        </section>
-    </section>
+    <div class="search-bardiv">
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search Products">
+        </div>
+    </div>
+    <script src="/js/index.js"></script>   
 </body>
 </html>
