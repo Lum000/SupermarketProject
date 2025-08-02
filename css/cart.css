@@ -1,0 +1,150 @@
+
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgba(122, 118, 118, 0.411);
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    margin: auto;
+    padding: 0px;
+}
+.header-top{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+.icon-top img{
+    max-width: 35px;
+    max-height: 35px;
+}
+.icon-top{
+    height: 8vh;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: #007bff;
+}
+
+.nav-item img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+  filter: grayscale(100%);
+}
+
+.nav-item.active {
+  color: #007bff;
+  font-size: 17px;
+}
+
+.cart-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.header-prod {
+  flex: 3;
+}
+
+.header-qty {
+  flex: 1;
+  text-align: right;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.prod-item {
+  display: flex;
+  align-items: center;
+  flex: 3;
+}
+
+.prod-item img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.prod-info h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.quantity-info {
+  flex: 1;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.total{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 600px;
+    text-align: center;
+    justify-content: end;
+    margin: 0 auto;
+}
+.price{
+    color: #27ae60;
+}
